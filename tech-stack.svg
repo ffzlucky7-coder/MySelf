@@ -30,36 +30,30 @@
             <stop offset="0%" stop-color="#FF512F"/>
             <stop offset="100%" stop-color="#DD2476"/>
         </linearGradient>
-        
-        <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-            <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.4"/>
-        </filter>
     
 </defs>
 <style>
 
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600;700&amp;display=swap');
         .card-bg { fill: #0d1117; rx: 12px; ry: 12px; stroke: #30363d; stroke-width: 1px; }
-        .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
+        .font-mono { font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
         .header-title { font-size: 13px; fill: #8b949e; font-weight: 600; }
-        .pill-text { font-family: 'Fira Code', sans-serif; font-size: 12px; font-weight: 700; fill: #ffffff; }
+        .pill-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; }
         
         .dot { rx: 6px; ry: 6px; }
         .dot-red { fill: #ff5f56; }
         .dot-yellow { fill: #ffbd2e; }
         .dot-green { fill: #27c93f; }
         
-        .pill {
+        .pill-rect {
             rx: 18px;
             ry: 18px;
-            filter: url(#shadow);
             opacity: 0;
-            animation: pillFade 0.5s ease-out forwards;
+            animation: pillFade 0.4s ease-out forwards;
         }
         
         @keyframes pillFade {
-            0% { opacity: 0; transform: translateY(8px) scale(0.95); }
-            100% { opacity: 1; transform: translateY(0) scale(1); }
+            0% { opacity: 0; transform: translateY(6px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
     
 </style>
@@ -69,32 +63,32 @@
 <circle cx="52" cy="18" r="5.5" class="dot dot-green" />
 <text x="430" y="22" text-anchor="middle" class="font-mono header-title">lucky@skills ~ eye-catching-gradients.sh</text>
 <line x1="0" y1="36" x2="860" y2="36" stroke="#30363d" stroke-width="1" />
-<g class="pill" style="animation-delay: 0.1s;">
-<rect x="28" y="56" width="257" height="36" fill="url(#grad1)" class="pill" />
-<text x="156" y="78" text-anchor="middle" class="pill-text">🤖 Artificial Intelligence</text>
+<g class="pill-rect" style="animation-delay: 0.1s;">
+<rect x="28" y="56" width="257" height="36" fill="url(#grad1)" rx="18" ry="18" />
+<text x="156" y="79" text-anchor="middle" class="pill-text">🤖 Artificial Intelligence</text>
 </g>
-<g class="pill" style="animation-delay: 0.2s;">
-<rect x="301" y="56" width="167" height="36" fill="url(#grad2)" class="pill" />
-<text x="384" y="78" text-anchor="middle" class="pill-text">⚡ AI Automation</text>
+<g class="pill-rect" style="animation-delay: 0.2s;">
+<rect x="301" y="56" width="167" height="36" fill="url(#grad2)" rx="18" ry="18" />
+<text x="384" y="79" text-anchor="middle" class="pill-text">⚡ AI Automation</text>
 </g>
-<g class="pill" style="animation-delay: 0.3s;">
-<rect x="484" y="56" width="167" height="36" fill="url(#grad3)" class="pill" />
-<text x="567" y="78" text-anchor="middle" class="pill-text">🎬 Video Editing</text>
+<g class="pill-rect" style="animation-delay: 0.3s;">
+<rect x="484" y="56" width="167" height="36" fill="url(#grad3)" rx="18" ry="18" />
+<text x="567" y="79" text-anchor="middle" class="pill-text">🎬 Video Editing</text>
 </g>
-<g class="pill" style="animation-delay: 0.4s;">
-<rect x="667" y="56" width="212" height="36" fill="url(#grad4)" class="pill" />
-<text x="773" y="78" text-anchor="middle" class="pill-text">📈 AI Ads & Marketing</text>
+<g class="pill-rect" style="animation-delay: 0.4s;">
+<rect x="667" y="56" width="212" height="36" fill="url(#grad4)" rx="18" ry="18" />
+<text x="773" y="79" text-anchor="middle" class="pill-text">📈 AI Ads & Marketing</text>
 </g>
-<g class="pill" style="animation-delay: 0.5s;">
-<rect x="80" y="112" width="180" height="36" fill="url(#grad5)" class="pill" />
-<text x="170" y="134" text-anchor="middle" class="pill-text">🧠 LLMs & Prompts</text>
+<g class="pill-rect" style="animation-delay: 0.5s;">
+<rect x="80" y="112" width="180" height="36" fill="url(#grad5)" rx="18" ry="18" />
+<text x="170" y="135" text-anchor="middle" class="pill-text">🧠 LLMs & Prompts</text>
 </g>
-<g class="pill" style="animation-delay: 0.6s;">
-<rect x="276" y="112" width="153" height="36" fill="url(#grad6)" class="pill" />
-<text x="352" y="134" text-anchor="middle" class="pill-text">🐍 Python & ML</text>
+<g class="pill-rect" style="animation-delay: 0.6s;">
+<rect x="276" y="112" width="153" height="36" fill="url(#grad6)" rx="18" ry="18" />
+<text x="352" y="135" text-anchor="middle" class="pill-text">🐍 Python & ML</text>
 </g>
-<g class="pill" style="animation-delay: 0.7s;">
-<rect x="445" y="112" width="153" height="36" fill="url(#grad7)" class="pill" />
-<text x="521" y="134" text-anchor="middle" class="pill-text">🐙 Git & CI/CD</text>
+<g class="pill-rect" style="animation-delay: 0.7s;">
+<rect x="445" y="112" width="153" height="36" fill="url(#grad7)" rx="18" ry="18" />
+<text x="521" y="135" text-anchor="middle" class="pill-text">🐙 Git & CI/CD</text>
 </g>
 </svg>

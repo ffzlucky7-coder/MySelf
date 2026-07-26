@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 430" width="510" height="430">
 <style>
 
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&amp;display=swap');
         .card-bg { fill: #0d1117; rx: 12px; ry: 12px; stroke: #30363d; stroke-width: 1px; }
-        .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
+        .font-mono { font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
         .header-title { font-size: 13px; fill: #8b949e; font-weight: 600; }
         .prompt-user { fill: #7ee787; font-weight: 700; font-size: 13px; }
         .prompt-host { fill: #58a6ff; font-weight: 700; font-size: 13px; }

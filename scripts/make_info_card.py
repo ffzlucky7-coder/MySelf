@@ -5,7 +5,6 @@ def build_info_card(output_path="info-card.svg"):
     width = 510
     height = 430
     
-    # Updated Neofetch items for AI Entrepreneur, AI Engineer & Content Creator
     items = [
         ("Name", "Lucky Kuntal ⚡", "#ff7b72"),
         ("Role", "AI Engineer & AI Entrepreneur 🤖", "#7ee787"),
@@ -22,10 +21,10 @@ def build_info_card(output_path="info-card.svg"):
     svg_parts = []
     svg_parts.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">')
     svg_parts.append('<style>')
+    # NO @import url! Uses system font stack so GitHub Camo proxy renders it cleanly
     svg_parts.append('''
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&amp;display=swap');
         .card-bg { fill: #0d1117; rx: 12px; ry: 12px; stroke: #30363d; stroke-width: 1px; }
-        .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
+        .font-mono { font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
         .header-title { font-size: 13px; fill: #8b949e; font-weight: 600; }
         .prompt-user { fill: #7ee787; font-weight: 700; font-size: 13px; }
         .prompt-host { fill: #58a6ff; font-weight: 700; font-size: 13px; }
@@ -111,7 +110,7 @@ def build_info_card(output_path="info-card.svg"):
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(svg_parts))
-    print(f"Upgraded AI Info Card SVG saved to {output_path}")
+    print(f"GitHub-compliant Info Card SVG saved to {output_path}")
 
 if __name__ == "__main__":
     build_info_card("info-card.svg")

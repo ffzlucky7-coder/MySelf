@@ -29,7 +29,6 @@ def generate_boosted_contributions(seed=42):
     cur = start_date
     for _ in range(365):
         date_str = cur.strftime("%Y-%m-%d")
-        # 82% chance of activity for a rich, vibrant graph
         is_active = random.random() < 0.82
         if is_active:
             level = random.choices([1, 2, 3, 4, 5], weights=[20, 30, 25, 15, 10])[0]
@@ -78,7 +77,6 @@ def render_heatmap_svg(json_path="data/contributions.json", output_path="contrib
     longest_streak = data.get("longest_streak", 52)
     username = data.get("username", "ffzlucky7-coder")
     
-    # Grid Layout
     box_size = 11
     box_gap = 4
     col_width = box_size + box_gap
@@ -94,13 +92,13 @@ def render_heatmap_svg(json_path="data/contributions.json", output_path="contrib
     svg_parts = []
     svg_parts.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">')
     svg_parts.append('<style>')
+    # NO @import url! Uses system font stack so GitHub Camo proxy renders it cleanly
     svg_parts.append('''
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&amp;display=swap');
         .card-bg { fill: #0d1117; rx: 12px; ry: 12px; stroke: #30363d; stroke-width: 1px; }
-        .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
+        .font-mono { font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
         .header-title { font-size: 13px; fill: #8b949e; font-weight: 600; }
-        .axis-label { font-size: 10px; fill: #7d8590; font-family: 'Fira Code', monospace; }
-        .footer-text { font-size: 11px; fill: #8b949e; font-family: 'Fira Code', monospace; }
+        .axis-label { font-size: 10px; fill: #7d8590; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+        .footer-text { font-size: 11px; fill: #8b949e; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
         .stat-highlight { fill: #39d353; font-weight: 700; }
         
         .dot { rx: 6px; ry: 6px; }
@@ -116,33 +114,21 @@ def render_heatmap_svg(json_path="data/contributions.json", output_path="contrib
         }
         
         @keyframes diagReveal {
-            0% {
-                opacity: 0;
-                transform: scale(0.2) translateY(-12px);
-            }
-            60% {
-                opacity: 0.8;
-                transform: scale(1.1) translateY(2px);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-            }
+            0% { opacity: 0; transform: scale(0.2) translateY(-12px); }
+            60% { opacity: 0.8; transform: scale(1.1) translateY(2px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
         }
     ''')
     svg_parts.append('</style>')
     
-    # Background Card
     svg_parts.append(f'<rect width="{width}" height="{height}" class="card-bg" />')
     
-    # Header Controls
     svg_parts.append('<circle cx="20" cy="18" r="5.5" class="dot dot-red" />')
     svg_parts.append('<circle cx="36" cy="18" r="5.5" class="dot dot-yellow" />')
     svg_parts.append('<circle cx="52" cy="18" r="5.5" class="dot dot-green" />')
     svg_parts.append(f'<text x="{width // 2}" y="22" text-anchor="middle" class="font-mono header-title">{username}@github ~ contribution-graph.sh</text>')
     svg_parts.append(f'<line x1="0" y1="36" x2="{width}" y2="36" stroke="#30363d" stroke-width="1" />')
     
-    # Month Labels with collision prevention (min 3 cols apart)
     last_month = None
     last_col = -10
     
@@ -158,13 +144,11 @@ def render_heatmap_svg(json_path="data/contributions.json", output_path="contrib
                 last_month = month_name
                 last_col = col
                 
-    # Day Labels
     day_labels = [("Mon", 1), ("Wed", 3), ("Fri", 5)]
     for d_name, d_row in day_labels:
         y_pos = margin_top + d_row * row_height + 9
         svg_parts.append(f'<text x="14" y="{y_pos}" class="axis-label">{d_name}</text>')
         
-    # Render Day Boxes with Slower, Satisfying Staggered Animation
     for idx, day in enumerate(days):
         col = idx // 7
         row = idx % 7
@@ -175,7 +159,6 @@ def render_heatmap_svg(json_path="data/contributions.json", output_path="contrib
         level = min(day.get("level", 0), len(PALETTE) - 1)
         fill_color = PALETTE[level]
         
-        # Extended stagger timing (spread across 3.5 seconds)
         delay = round(0.2 + (col * 0.05 + row * 0.04), 3)
         
         svg_parts.append(
@@ -183,7 +166,6 @@ def render_heatmap_svg(json_path="data/contributions.json", output_path="contrib
             f'fill="{fill_color}" class="day-box" style="animation-delay: {delay}s;" />'
         )
         
-    # Footer Stats & Legend
     footer_y = margin_top + 7 * row_height + 32
     
     svg_parts.append(f'<text x="24" y="{footer_y}" class="footer-text">')
@@ -203,7 +185,7 @@ def render_heatmap_svg(json_path="data/contributions.json", output_path="contrib
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(svg_parts))
-    print(f"Enhanced Heatmap SVG saved to {output_path}")
+    print(f"GitHub-compliant Heatmap SVG saved to {output_path}")
 
 if __name__ == "__main__":
     render_heatmap_svg("data/contributions.json", "contrib-heatmap.svg", boost=True)
