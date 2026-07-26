@@ -1,16 +1,25 @@
 <div align="center">
 
-<!-- Terminal Header: Contribution Graph -->
-<h3><code>ffzlucky7-coder@github ~ $ ./contributions.sh</code></h3>
+# ⚡ Lucky Kuntal (ffzlucky7-coder) ⚡
+### 🚀 Full-Stack Developer | Tech Enthusiast | Open Source Contributor
+
+[![Instagram](https://img.shields.io/badge/Instagram-@lucky__kuntal__18-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/lucky_kuntal_18/)
+[![GitHub](https://img.shields.io/badge/GitHub-ffzlucky7--coder-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ffzlucky7-coder)
+[![Profile Views](https://komarev.com/ghpvc/?username=ffzlucky7-coder&color=39d353&style=for-the-badge&label=Profile+Views)](https://github.com/ffzlucky7-coder)
+
+---
+
+<!-- Animated Contribution Graph -->
+<h2>📊 Live Contribution Calendar</h2>
 
 <a href="https://github.com/ffzlucky7-coder">
-  <img src="./contrib-heatmap.svg" width="860" alt="Live Animated Contribution Heatmap" />
+  <img src="./contrib-heatmap.svg" width="860" alt="Live Contribution Heatmap" />
 </a>
 
 <br /><br />
 
-<!-- Terminal Header: Whoami -->
-<h3><code>ffzlucky7-coder@github ~ $ whoami</code></h3>
+<!-- Side-by-Side ASCII Portrait & Neofetch Card -->
+<h2>💻 Developer Terminal & ASCII Portrait</h2>
 
 <table>
   <tr>
@@ -25,8 +34,34 @@
 
 <br />
 
+<!-- About Me Section -->
+<h2>🙋‍♂️ About Me</h2>
+
+<p align="left">
+  👋 Hey there! I'm <b>Lucky Kuntal</b>, a passionate Full-Stack Developer from India 🇮🇳.<br/>
+  💻 I love crafting high-performance web applications, sleek user interfaces, and automation tools.<br/>
+  ⚡ <b>Tech Stack:</b> Python, JavaScript, TypeScript, React, Next.js, Node.js, Express, C++, Git & Linux.<br/>
+  📸 <b>Connect with me:</b> Follow me on Instagram <a href="https://www.instagram.com/lucky_kuntal_18/"><b>@lucky_kuntal_18</b></a>!
+</p>
+
+<br />
+
+<!-- GitHub Stats & Top Languages -->
+<h2>🔥 GitHub Activity & Language Stats</h2>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ffzlucky7-coder&show_icons=true&theme=dark&count_private=true&hide_border=true" width="420" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ffzlucky7-coder&layout=compact&theme=dark&hide_border=true" width="420" alt="Top Languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ffzlucky7-coder&theme=dark&hide_border=true" width="840" alt="GitHub Streak Stats" />
+</p>
+
+<br />
+
 <!-- Tech Stack Badges -->
-<h3><code>ffzlucky7-coder@github ~ $ cat stack.json</code></h3>
+<h2>🚀 Technologies & Tools</h2>
 
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
@@ -41,21 +76,10 @@
 
 <br />
 
-<!-- Social & Connect -->
-<h3><code>ffzlucky7-coder@github ~ $ ./connect.sh</code></h3>
-
-<p>
-  <a href="https://github.com/ffzlucky7-coder">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  <a href="https://github.com/ffzlucky7-coder/MySelf">
-    <img src="https://img.shields.io/badge/Star_This_Repo-FFD700?style=for-the-badge&logo=githubsponsors&logoColor=black" alt="Star Repository" />
-  </a>
-</p>
-
-<br />
-
 ---
-<i>⚡ Auto-refreshed daily via GitHub Actions | Powered by SVG SMIL & CSS keyframes</i>
+
+<p align="center">
+  <i>✨ Designed with passion by Lucky Kuntal | Auto-refreshed daily via GitHub Actions ✨</i>
+</p>
 
 </div>

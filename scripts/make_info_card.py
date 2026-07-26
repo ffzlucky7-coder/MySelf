@@ -2,21 +2,21 @@ import os
 import sys
 
 def build_info_card(output_path="info-card.svg"):
-    width = 500
-    height = 420
+    width = 510
+    height = 430
     
-    # Key-value rows to render in Neofetch format
+    # Neofetch items featuring Lucky Kuntal's info & Instagram
     items = [
-        ("OS", "Linux / Web Developer OS", "#58a6ff"),
-        ("Host", "ffzlucky7-coder / MySelf", "#79c0ff"),
-        ("Role", "Full-Stack Developer & Innovator 🚀", "#7ee787"),
-        ("Uptime", "Building Cool Projects Daily ⚡", "#ffa657"),
+        ("Name", "Lucky Kuntal ⚡", "#ff7b72"),
+        ("Handle", "ffzlucky7-coder", "#79c0ff"),
+        ("Instagram", "@lucky_kuntal_18 📸", "#f778ba"),
+        ("Role", "Full-Stack Web Developer & Creator 🚀", "#7ee787"),
+        ("Location", "India 🇮🇳", "#ffa657"),
         ("Languages", "Python, JavaScript, TypeScript, C++", "#d2a8ff"),
-        ("Frontend", "React, HTML5, CSS3, TailwindCSS", "#58a6ff"),
-        ("Backend", "Node.js, Express, REST APIs", "#7ee787"),
-        ("Tools", "Git, GitHub Actions, VS Code, Docker", "#ff7b72"),
-        ("Passions", "UI/UX Aesthetics & Automation 💻", "#ffa657"),
-        ("Status", "Available for Projects & Tech Discussions 🤝", "#3fb950"),
+        ("Frontend", "React, Next.js, HTML5, CSS3, Tailwind", "#58a6ff"),
+        ("Backend", "Node.js, Express, REST APIs, Git", "#7ee787"),
+        ("Passions", "Building Cool Web Apps & Sleek UI/UX 💡", "#ffa657"),
+        ("Status", "Open for Collaborations & Cool Projects 🤝", "#3fb950"),
     ]
     
     svg_parts = []
@@ -42,12 +42,12 @@ def build_info_card(output_path="info-card.svg"):
         
         .row-anim {
             opacity: 0;
-            animation: fadeInRow 0.3s ease-out forwards;
+            animation: fadeInRow 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
         
         @keyframes fadeInRow {
-            from { opacity: 0; transform: translateY(6px); }
-            to { opacity: 1; transform: translateY(0); }
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
         
         .palette-box { rx: 4px; ry: 4px; }
@@ -57,20 +57,20 @@ def build_info_card(output_path="info-card.svg"):
     # Background Card
     svg_parts.append(f'<rect width="{width}" height="{height}" class="card-bg" />')
     
-    # Window Header Controls
+    # Header Controls
     svg_parts.append('<circle cx="20" cy="18" r="5.5" class="dot dot-red" />')
     svg_parts.append('<circle cx="36" cy="18" r="5.5" class="dot dot-yellow" />')
     svg_parts.append('<circle cx="52" cy="18" r="5.5" class="dot dot-green" />')
-    svg_parts.append(f'<text x="{width // 2}" y="22" text-anchor="middle" class="font-mono header-title">lucky@neofetch ~ stats</text>')
+    svg_parts.append(f'<text x="{width // 2}" y="22" text-anchor="middle" class="font-mono header-title">lucky@neofetch ~ info</text>')
     svg_parts.append(f'<line x1="0" y1="36" x2="{width}" y2="36" stroke="#30363d" stroke-width="1" />')
     
-    # Header Prompt: ffzlucky7-coder@github ~ neofetch
-    svg_parts.append('<g class="row-anim" style="animation-delay: 0.1s;">')
+    # Header Prompt
+    svg_parts.append('<g class="row-anim" style="animation-delay: 0.15s;">')
     svg_parts.append('<text x="24" y="62" class="font-mono">')
     svg_parts.append('<tspan class="prompt-user">ffzlucky7-coder</tspan>')
     svg_parts.append('<tspan class="prompt-symbol">@</tspan>')
     svg_parts.append('<tspan class="prompt-host">github</tspan>')
-    svg_parts.append('<tspan class="prompt-symbol">:~$ neofetch</tspan>')
+    svg_parts.append('<tspan class="prompt-symbol">:~$ neofetch --user lucky_kuntal</tspan>')
     svg_parts.append('</text>')
     svg_parts.append(f'<line x1="24" y1="72" x2="{width - 24}" y2="72" stroke="#21262d" stroke-width="1.5" />')
     svg_parts.append('</g>')
@@ -81,7 +81,7 @@ def build_info_card(output_path="info-card.svg"):
     
     for i, (key, val, key_color) in enumerate(items):
         y_pos = start_y + i * row_height
-        delay = round(0.2 + i * 0.1, 2)
+        delay = round(0.25 + i * 0.15, 2)
         
         svg_parts.append(f'<g class="row-anim" style="animation-delay: {delay}s;">')
         svg_parts.append(f'<text x="24" y="{y_pos}" class="font-mono">')
@@ -93,13 +93,13 @@ def build_info_card(output_path="info-card.svg"):
         
     # Color Palette Footer
     palette_y = start_y + len(items) * row_height + 12
-    colors = ["#ff5f56", "#ffbd2e", "#27c93f", "#58a6ff", "#bc8cff", "#7ee787", "#ffa657", "#c9d1d9"]
-    box_w = 24
+    colors = ["#ff5f56", "#ffbd2e", "#27c93f", "#58a6ff", "#bc8cff", "#7ee787", "#f778ba", "#ffa657"]
+    box_w = 25
     box_h = 14
     box_gap = 8
     start_x = 24
     
-    delay = round(0.2 + len(items) * 0.1, 2)
+    delay = round(0.3 + len(items) * 0.15, 2)
     svg_parts.append(f'<g class="row-anim" style="animation-delay: {delay}s;">')
     svg_parts.append(f'<line x1="24" y1="{palette_y - 12}" x2="{width - 24}" y2="{palette_y - 12}" stroke="#21262d" stroke-width="1.5" />')
     for idx, c in enumerate(colors):
@@ -111,7 +111,7 @@ def build_info_card(output_path="info-card.svg"):
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(svg_parts))
-    print(f"Info Card SVG saved to {output_path}")
+    print(f"Upgraded Info Card SVG saved to {output_path}")
 
 if __name__ == "__main__":
     build_info_card("info-card.svg")
