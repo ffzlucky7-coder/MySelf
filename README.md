@@ -34,7 +34,7 @@
 
 <br />
 
-<!-- About Me Section focused on AI, Agencies, Content Creation -->
+<!-- About Me Section -->
 <h2>🚀 About Me</h2>
 
 <p align="left">
@@ -47,14 +47,20 @@
 
 <br />
 
-<!-- Eye-Catching Gradient Tech Stack Banner -->
+<!-- Standard Classic Badges as requested -->
 <h2>🛠️ AI Tools, Tech & Skills</h2>
 
-<a href="https://github.com/ffzlucky7-coder">
-  <img src="https://raw.githubusercontent.com/ffzlucky7-coder/ffzlucky7-coder/main/tech-stack.svg" width="860" alt="Eye Catching Gradient Tech Stack" />
-</a>
+<p align="center">
+  <img src="https://img.shields.io/badge/Artificial_Intelligence-00A67E?style=for-the-badge&logo=openai&logoColor=white" alt="AI" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/AI_Automation-FF4B4B?style=for-the-badge&logo=n8n&logoColor=white" alt="Automation" />
+  <img src="https://img.shields.io/badge/Video_Editing-000555?style=for-the-badge&logo=adobe-premiere-pro&logoColor=white" alt="Video Editing" />
+  <img src="https://img.shields.io/badge/AI_Ads_&_Marketing-FF6C37?style=for-the-badge&logo=meta&logoColor=white" alt="AI Marketing" />
+  <img src="https://img.shields.io/badge/LLMs_&_Prompts-412991?style=for-the-badge&logo=huggingface&logoColor=white" alt="LLMs" />
+  <img src="https://img.shields.io/badge/Git_&_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Git" />
+</p>
 
-<br /><br />
+<br />
 
 <!-- GitHub Stats & Streak -->
 <h2>🔥 GitHub Activity</h2>

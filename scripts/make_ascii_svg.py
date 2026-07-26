@@ -5,7 +5,7 @@ from PIL import Image
 
 RAMP = " .`:-=+*cs#%@"  # bright -> dark
 
-def image_to_ascii(image_path, width=54):
+def image_to_ascii(image_path, width=54, max_rows=26):
     if not os.path.exists(image_path):
         print(f"Error: {image_path} not found.")
         sys.exit(1)
@@ -15,6 +15,7 @@ def image_to_ascii(image_path, width=54):
     aspect_ratio = img.height / img.width
     font_aspect = 0.52
     height = int(width * aspect_ratio * font_aspect)
+    height = min(height, max_rows)
     
     img_resized = img.resize((width, height), Image.Resampling.LANCZOS)
     arr = np.array(img_resized)
@@ -39,7 +40,7 @@ def build_animated_ascii_svg(lines, output_path="profile-ascii.svg"):
     
     padding_x = 18
     width = 390
-    height = int(num_rows * line_height + 60)
+    height = 430  # Matched to Info Card height
     
     total_duration = 3.8
     row_delay = total_duration / max(num_rows, 1)
@@ -47,7 +48,7 @@ def build_animated_ascii_svg(lines, output_path="profile-ascii.svg"):
     svg_parts = []
     svg_parts.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">')
     svg_parts.append('<style>')
-    # NO @import url! Uses system font stack so GitHub Camo proxy renders it cleanly
+    # NO @import url! Uses system font stack so GitHub Camo proxy renders 100% cleanly
     svg_parts.append('''
         .bg { fill: #0d1117; rx: 12px; ry: 12px; stroke: #30363d; stroke-width: 1px; }
         .ascii-text { font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; font-size: 10.5px; fill: #58a6ff; white-space: pre; }
@@ -91,9 +92,9 @@ def build_animated_ascii_svg(lines, output_path="profile-ascii.svg"):
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(svg_parts))
-    print(f"GitHub-compliant ASCII SVG saved to {output_path}")
+    print(f"ASCII SVG from new photo saved to {output_path}")
 
 if __name__ == "__main__":
     prepped_img = "data/source-prepped.png" if os.path.exists("data/source-prepped.png") else "developer_lucky.png"
-    lines = image_to_ascii(prepped_img, width=54)
+    lines = image_to_ascii(prepped_img, width=54, max_rows=26)
     build_animated_ascii_svg(lines, "profile-ascii.svg")
