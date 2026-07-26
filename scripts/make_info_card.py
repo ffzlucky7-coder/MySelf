@@ -5,18 +5,18 @@ def build_info_card(output_path="info-card.svg"):
     width = 510
     height = 430
     
-    # Neofetch items featuring Lucky Kuntal's info & Instagram
+    # Updated Neofetch items for AI Entrepreneur, AI Engineer & Content Creator
     items = [
         ("Name", "Lucky Kuntal ⚡", "#ff7b72"),
-        ("Handle", "ffzlucky7-coder", "#79c0ff"),
+        ("Role", "AI Engineer & AI Entrepreneur 🤖", "#7ee787"),
+        ("Focus", "Building AI Agencies & AI Startups 🚀", "#58a6ff"),
+        ("Creation", "Content Creator & AI Video Editing 🎬", "#f778ba"),
+        ("Marketing", "AI Ads & Automated Marketing 📈", "#ffa657"),
+        ("Skills", "Prompt Eng, AI Automation, LLMs, Vision", "#d2a8ff"),
+        ("Stack", "Python, OpenAI, PyTorch, Node, React", "#79c0ff"),
         ("Instagram", "@lucky_kuntal_18 📸", "#f778ba"),
-        ("Role", "Full-Stack Web Developer & Creator 🚀", "#7ee787"),
         ("Location", "India 🇮🇳", "#ffa657"),
-        ("Languages", "Python, JavaScript, TypeScript, C++", "#d2a8ff"),
-        ("Frontend", "React, Next.js, HTML5, CSS3, Tailwind", "#58a6ff"),
-        ("Backend", "Node.js, Express, REST APIs, Git", "#7ee787"),
-        ("Passions", "Building Cool Web Apps & Sleek UI/UX 💡", "#ffa657"),
-        ("Status", "Open for Collaborations & Cool Projects 🤝", "#3fb950"),
+        ("Status", "Building AI Startups & Collaborating 🤝", "#3fb950"),
     ]
     
     svg_parts = []
@@ -61,7 +61,7 @@ def build_info_card(output_path="info-card.svg"):
     svg_parts.append('<circle cx="20" cy="18" r="5.5" class="dot dot-red" />')
     svg_parts.append('<circle cx="36" cy="18" r="5.5" class="dot dot-yellow" />')
     svg_parts.append('<circle cx="52" cy="18" r="5.5" class="dot dot-green" />')
-    svg_parts.append(f'<text x="{width // 2}" y="22" text-anchor="middle" class="font-mono header-title">lucky@neofetch ~ info</text>')
+    svg_parts.append(f'<text x="{width // 2}" y="22" text-anchor="middle" class="font-mono header-title">lucky@neofetch ~ ai-profile</text>')
     svg_parts.append(f'<line x1="0" y1="36" x2="{width}" y2="36" stroke="#30363d" stroke-width="1" />')
     
     # Header Prompt
@@ -69,7 +69,7 @@ def build_info_card(output_path="info-card.svg"):
     svg_parts.append('<text x="24" y="62" class="font-mono">')
     svg_parts.append('<tspan class="prompt-user">ffzlucky7-coder</tspan>')
     svg_parts.append('<tspan class="prompt-symbol">@</tspan>')
-    svg_parts.append('<tspan class="prompt-host">github</tspan>')
+    svg_parts.append('<tspan class="prompt-host">ai-agency</tspan>')
     svg_parts.append('<tspan class="prompt-symbol">:~$ neofetch --user lucky_kuntal</tspan>')
     svg_parts.append('</text>')
     svg_parts.append(f'<line x1="24" y1="72" x2="{width - 24}" y2="72" stroke="#21262d" stroke-width="1.5" />')
@@ -111,7 +111,7 @@ def build_info_card(output_path="info-card.svg"):
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(svg_parts))
-    print(f"Upgraded Info Card SVG saved to {output_path}")
+    print(f"Upgraded AI Info Card SVG saved to {output_path}")
 
 if __name__ == "__main__":
     build_info_card("info-card.svg")

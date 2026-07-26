@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 944" width="496" height="944">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 430" width="390" height="430">
 <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap');
         .bg { fill: #0d1117; rx: 12px; ry: 12px; stroke: #30363d; stroke-width: 1px; }
-        .ascii-text { font-family: 'Fira Code', 'Courier New', Consolas, monospace; font-size: 11px; fill: #58a6ff; white-space: pre; }
+        .ascii-text { font-family: 'Fira Code', 'Courier New', Consolas, monospace; font-size: 10.5px; fill: #58a6ff; white-space: pre; }
         .header-title { font-family: 'Fira Code', monospace; font-size: 12px; fill: #8b949e; font-weight: 600; }
         .dot { rx: 6px; ry: 6px; }
         .dot-red { fill: #ff5f56; }
@@ -12,81 +12,49 @@
         
         .line-typing {
             opacity: 0;
-            animation: typeWipe 0.3s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
+            animation: typeWipe 0.25s cubic-bezier(0.2, 0.8, 0.4, 1) forwards;
         }
         
         @keyframes typeWipe {
-            0% { opacity: 0; transform: translateX(-8px); filter: blur(2px); }
-            100% { opacity: 1; transform: translateX(0); filter: blur(0); }
+            0% { opacity: 0; transform: translateX(-6px); }
+            100% { opacity: 1; transform: translateX(0); }
         }
     
 </style>
-<rect width="496" height="944" class="bg" />
+<rect width="390" height="430" class="bg" />
 <circle cx="20" cy="18" r="5.5" class="dot dot-red" />
 <circle cx="36" cy="18" r="5.5" class="dot dot-yellow" />
 <circle cx="52" cy="18" r="5.5" class="dot dot-green" />
-<text x="248" y="22" text-anchor="middle" class="header-title">lucky_kuntal@terminal ~ portrait.txt</text>
-<line x1="0" y1="36" x2="496" y2="36" stroke="#30363d" stroke-width="1" />
-<text x="24" y="56" class="ascii-text line-typing" style="animation-delay: 0.1s;">------==+==:`..&#160;.:=*cssscccc*******+++++=+++=:``````````::::::`.`-==</text>
-<text x="24" y="70" class="ascii-text line-typing" style="animation-delay: 0.173s;">======+++****+=:&#160;&#160;..`-+cssssccccccc*****++*+++=-:```::::::------:`:-</text>
-<text x="24" y="84" class="ascii-text line-typing" style="animation-delay: 0.245s;">**+++*****++***=`&#160;`-:...:=*cssssscccccc******++++=-:::::::::`````.``</text>
-<text x="24" y="98" class="ascii-text line-typing" style="animation-delay: 0.318s;">*********csc*+*=`&#160;:cc*=-`...:=*csssscccc*ccc***+++++=:`...`````::---</text>
-<text x="24" y="112" class="ascii-text line-typing" style="animation-delay: 0.39s;">******c*csssccc=`&#160;:******+=:`...:=*ssscccccccc******++==---===+**ccc</text>
-<text x="24" y="126" class="ascii-text line-typing" style="animation-delay: 0.463s;">*****ccccsscccc=`.:*c*******+=-:...`-+*csssscccc*****+*csss##%%%%%%%</text>
-<text x="24" y="140" class="ascii-text line-typing" style="animation-delay: 0.535s;">cc******+++++**=`.:cccc******++++=-.&#160;&#160;.`-+csssscccc***s%%###ss**+++=</text>
-<text x="24" y="154" class="ascii-text line-typing" style="animation-delay: 0.608s;">c*-::::`:=----=-..:*ccccccc***+++++:&#160;`-:`..:=*cs#ssc******+++=+=====</text>
-<text x="24" y="168" class="ascii-text line-typing" style="animation-delay: 0.681s;">+++++**+*sscccc*``*sc*************+:&#160;:cc*+=:`.`:=csssssccc***++++++=</text>
-<text x="24" y="182" class="ascii-text line-typing" style="animation-delay: 0.753s;">sss#####%%%%###s:`*sc************c*:.:csssccc+=:`.`-+cs#sscc*=::````</text>
-<text x="24" y="196" class="ascii-text line-typing" style="animation-delay: 0.826s;">cccccssccccc***-.`:*ccccccc**+=+*c*:.-sssssccc**+.&#160;:..:=*sssc*------</text>
-<text x="24" y="210" class="ascii-text line-typing" style="animation-delay: 0.898s;">=-::`:+*cccsccc=..:cccc*ccc******c*:&#160;:csssssssss*``+`&#160;...`-=********</text>
-<text x="24" y="224" class="ascii-text line-typing" style="animation-delay: 0.971s;">+++++*ccsc*++=+-.&#160;:*cccccccccsssssc:&#160;-ssccccssss*`:+``++-`.`::=cccss</text>
-<text x="24" y="238" class="ascii-text line-typing" style="animation-delay: 1.044s;">+=:-++++*******=.&#160;:csssssssss+=====:.-*++*+=+ccc*`:+`:***c*=..+ssscc</text>
-<text x="24" y="252" class="ascii-text line-typing" style="animation-delay: 1.116s;">*+--++*****=:---.&#160;-csss#####%*:==+c-`+###%#csc**+`:=`:+*+cs+..+sssss</text>
-<text x="24" y="266" class="ascii-text line-typing" style="animation-delay: 1.189s;">%s*cssssccc=```:`&#160;-cssss###sc=--:-=---=+**s###s#*`-*`-s##sc+.`+sss#s</text>
-<text x="24" y="280" class="ascii-text line-typing" style="animation-delay: 1.261s;">%s+*s######c:::-`.-sssssc=--:````::::--:::-+s##%c`=c`-s#scc+.`+cs#%#</text>
-<text x="24" y="294" class="ascii-text line-typing" style="animation-delay: 1.334s;">%s+*s######*::--`.-ssss*``:```......::`.-:``-c##*:-+`:*****=.`+cs#%%</text>
-<text x="24" y="308" class="ascii-text line-typing" style="animation-delay: 1.406s;">%c=*s##%%##c====`.=sss*``:.&#160;..````::`....`::``=s*`=*`:csc**=.`+cs#%%</text>
-<text x="24" y="322" class="ascii-text line-typing" style="animation-delay: 1.479s;">%c=+s##%%%%c+++=:`=#ss*:..:-=*csssssscc+-``:``:**:-+`:csc**-.`+cs#%%</text>
-<text x="24" y="336" class="ascii-text line-typing" style="animation-delay: 1.552s;">%s+*s#%%%%%s***+:`=###*..:**css######%#scc+:..&#160;+s:+c`-ccc**=.:+cs#%%</text>
-<text x="24" y="350" class="ascii-text line-typing" style="animation-delay: 1.624s;">%s+*s#%%%%%scsc*-:=###c`-+**cs######%%%#sscc+`+%s:c#`+%%%c*=.-*cs##%</text>
-<text x="24" y="364" class="ascii-text line-typing" style="animation-delay: 1.697s;">%#*c#%%%%%%#sss*-:+%###=*c*====+csscc*++++*ss=#%s:c#`*%%%sc+`-css###</text>
-<text x="24" y="378" class="ascii-text line-typing" style="animation-delay: 1.769s;">#s**c###%%%sccs*-:+%%%@**s====:``=sc:::-=+*cc+%@s:cs:*%%%sc+`=css###</text>
-<text x="24" y="392" class="ascii-text line-typing" style="animation-delay: 1.842s;">#sc*cs##%%%sccsc-:*%%#sccc==--c-`*%sc=:`-=+scc#cs:cs:*%@@ss*`=s####s</text>
-<text x="24" y="406" class="ascii-text line-typing" style="animation-delay: 1.915s;">cc***csss##s**c*:`+##=-+ssc*+**-=#%#sc++*s###*cc*`cs`*s+-:-:`+sc+-:`</text>
-<text x="24" y="420" class="ascii-text line-typing" style="animation-delay: 1.987s;">===-========--=--:=+++=-ss#%%%s*c%%#s#%%%@%%scc#c-cs-+:&#160;&#160;&#160;&#160;``+c-...&#160;</text>
-<text x="24" y="434" class="ascii-text line-typing" style="animation-delay: 2.06s;">=*+---=+=++=++-::::::-+=*cc###*--cs*+s%%###s*s#c+***c+&#160;.-:=*+*#s-.&#160;&#160;</text>
-<text x="24" y="448" class="ascii-text line-typing" style="animation-delay: 2.132s;">-**::``-+*c=:::`.````.=+=c*css+:.`-=+ccssscc+**-:--==+--=--+=csc*:`-</text>
-<text x="24" y="462" class="ascii-text line-typing" style="animation-delay: 2.205s;">:=+-:``:=++=----:````:```+c+c=.``-+==-::cscc=::------+#c-:-:`*sc*+++</text>
-<text x="24" y="476" class="ascii-text line-typing" style="animation-delay: 2.277s;">:-s+:`::-+++==----:--:``.`*+=:-::===+=++*c*+----::::`+#s*s#+`c##+::-</text>
-<text x="24" y="490" class="ascii-text line-typing" style="animation-delay: 2.35s;">-=sc-:::--------------:``.+*=----==+****++=:==----::`+sssss+`c#%*-::</text>
-<text x="24" y="504" class="ascii-text line-typing" style="animation-delay: 2.423s;">-+s*:`-`=*cc+=-:----::::`.=*-::=+*ccssc*=c*-+==---:::+csss**-`--:`+c</text>
-<text x="24" y="518" class="ascii-text line-typing" style="animation-delay: 2.495s;">=*s=::-`-c*+*+==+=+=-==--`+*-`::...``::+s#=````:=====+**css#s-.``:*c</text>
-<text x="24" y="532" class="ascii-text line-typing" style="animation-delay: 2.568s;">=c%s+:+++===*-:::--==+=-:=s*=:--``-==+*###*.``.&#160;:+=--====s%%#*::+sc*</text>
-<text x="24" y="546" class="ascii-text line-typing" style="animation-delay: 2.64s;">==+=-:`:`:::::-=====-`..`ss***==-:=*ccs%#ss*-:``:c#ssssss#%%%#%s+++=</text>
-<text x="24" y="560" class="ascii-text line-typing" style="animation-delay: 2.713s;">cc*=++=====++*++=-:`...&#160;.+c**ss+=+*ccs##ss#c`::``-*cssss#%%%%%s*++==</text>
-<text x="24" y="574" class="ascii-text line-typing" style="animation-delay: 2.785s;">----::-*+=-::::`::`..``.&#160;.+sc*sc+++**css##*::`::`..:::--=**ccc***+==</text>
-<text x="24" y="588" class="ascii-text line-typing" style="animation-delay: 2.858s;">:-=+=+**-:::``::::```````..:+*c##cc*cscc*-`::``:::`.`::`::-=*+++==--</text>
-<text x="24" y="602" class="ascii-text line-typing" style="animation-delay: 2.931s;">ssss#c:```::::::-:```:::::`...:-===---:```::`::`-:`.``::::--=++=-::`</text>
-<text x="24" y="616" class="ascii-text line-typing" style="animation-delay: 3.003s;">%#ss+``:`:`-::-:::`.::::::`````.......`:::`::::`:-:.:``-:-:--=+:`.`-</text>
-<text x="24" y="630" class="ascii-text line-typing" style="animation-delay: 3.076s;">cc#*:`.`:``:-:--:-``::::::````:```::````::`:::```--`::``:-`---+-.`.`</text>
-<text x="24" y="644" class="ascii-text line-typing" style="animation-delay: 3.148s;">s#*:::`.:-``-`---:`::::::::``::::``::``:-::`::```:---::.:::-:-=+=--:</text>
-<text x="24" y="658" class="ascii-text line-typing" style="animation-delay: 3.221s;">%s:``:`:.::`:`-::`--:::::::``:::`::`:::::::::::::::-=--```:::--=+=::</text>
-<text x="24" y="672" class="ascii-text line-typing" style="animation-delay: 3.294s;">*-``.`:.:.:`:`-::::-:::::::``:::``:```:::::::`:::-::---````:`::-=-`.</text>
-<text x="24" y="686" class="ascii-text line-typing" style="animation-delay: 3.366s;">:````.```````::```::::::::::``::```.```:::::::::---::-::`.```:::--:`</text>
-<text x="24" y="700" class="ascii-text line-typing" style="animation-delay: 3.439s;">```.``...`.&#160;.`.``:::::::::::``-:``````::::::::::----:-:``...```:::--</text>
-<text x="24" y="714" class="ascii-text line-typing" style="animation-delay: 3.511s;">`.``..```..&#160;...``::::::::::::`:-``````::::::::::-------:...`````:::-</text>
-<text x="24" y="728" class="ascii-text line-typing" style="animation-delay: 3.584s;">````````:`.&#160;....``:::::::::::`:::``````:::::::::----:--`...`````::::</text>
-<text x="24" y="742" class="ascii-text line-typing" style="animation-delay: 3.656s;">``````:`::`&#160;&#160;....```:::::::::`:::``...```::::::--::::-`&#160;..`````````:</text>
-<text x="24" y="756" class="ascii-text line-typing" style="animation-delay: 3.729s;">--::`````:.&#160;&#160;.....``::::::::```:::`...```:`:::::---:--.&#160;&#160;...``::=+*-</text>
-<text x="24" y="770" class="ascii-text line-typing" style="animation-delay: 3.802s;">+*cccc*+=:&#160;&#160;&#160;......`````````````::`....````````:::::-=`&#160;&#160;.:-+*s#%%#c</text>
-<text x="24" y="784" class="ascii-text line-typing" style="animation-delay: 3.874s;">+*cs###s*`&#160;......&#160;&#160;.``..```````..```....```....```::::..&#160;.=*css####c</text>
-<text x="24" y="798" class="ascii-text line-typing" style="animation-delay: 3.947s;">+css##sc-&#160;&#160;&#160;........``.....``:``````..``````...`-`::-:.&#160;&#160;&#160;:+*cc####s</text>
-<text x="24" y="812" class="ascii-text line-typing" style="animation-delay: 4.019s;">+cs###c+`&#160;&#160;&#160;...........``````::::````````::``..`-=---:.&#160;&#160;&#160;.-+*cs###s</text>
-<text x="24" y="826" class="ascii-text line-typing" style="animation-delay: 4.092s;">+s###sc-..&#160;&#160;......&#160;..........`::::```::`````..&#160;&#160;``---:...`&#160;`=+*cs##s</text>
-<text x="24" y="840" class="ascii-text line-typing" style="animation-delay: 4.165s;">*csssc=`..&#160;&#160;&#160;....`:```````.....:::-``:`.`````````::--:``=*-.:=+*cs##</text>
-<text x="24" y="854" class="ascii-text line-typing" style="animation-delay: 4.237s;">cc***=-:..&#160;&#160;......``::---:::--::::-:`:::----::--:::--:`..:&#160;.:`=++*s#</text>
-<text x="24" y="868" class="ascii-text line-typing" style="animation-delay: 4.31s;">s*+==:-:..&#160;&#160;......&#160;&#160;&#160;&#160;.`::``````.````.``````::```:::::`.&#160;&#160;&#160;.-::-=+cs</text>
-<text x="24" y="882" class="ascii-text line-typing" style="animation-delay: 4.382s;">s*==::-:..&#160;&#160;.`.&#160;.```...&#160;..`::::``..```::::::```::::`:``...&#160;.++`:-+*s</text>
-<text x="24" y="896" class="ascii-text line-typing" style="animation-delay: 4.455s;">cs*=::-`..&#160;&#160;&#160;``.&#160;..`:`````....`:::::::::::::::-:::`:```...&#160;&#160;`..:=*cs</text>
-<text x="24" y="910" class="ascii-text line-typing" style="animation-delay: 4.527s;">csc*-:-`..&#160;&#160;..`:`...``````````..``:::````:::--:::``-``:...&#160;&#160;`::+*css</text>
+<text x="195" y="22" text-anchor="middle" class="header-title">lucky_kuntal@ai-terminal ~ portrait.txt</text>
+<line x1="0" y1="36" x2="390" y2="36" stroke="#30363d" stroke-width="1" />
+<text x="20" y="54.0" class="ascii-text line-typing" style="animation-delay: 0.1s;">++*c*++*=`&#160;=cc*=-`..`:+c###sscc*****+++++++=-`````:`</text>
+<text x="20" y="67.5" class="ascii-text line-typing" style="animation-delay: 0.227s;">***cc**c+`.=scc***+=:`..:=*sssccccc*****+++++===-===</text>
+<text x="20" y="81.0" class="ascii-text line-typing" style="animation-delay: 0.353s;">cccccccs+`.+sscc**ccc*+=:`.`-+*csssccccc****+*s###%%</text>
+<text x="20" y="94.5" class="ascii-text line-typing" style="animation-delay: 0.48s;">==--==+c+`.+sscc**c****c**+:&#160;```-+*sssssscc*+c##ssc*</text>
+<text x="20" y="108.0" class="ascii-text line-typing" style="animation-delay: 0.607s;">::==-==+=.`+ccc***ccc******-&#160;-*=:```-+c###scc***++=-</text>
+<text x="20" y="121.5" class="ascii-text line-typing" style="animation-delay: 0.733s;">ccs#sss#s`:s#c*+++***cccccc-.=##sc*=:``-+cs###scc*+=</text>
+<text x="20" y="135.0" class="ascii-text line-typing" style="animation-delay: 0.86s;">%%####s#c:-*ccc*******+*csc-`+####sscc*=`.:-+cs##sc+</text>
+<text x="20" y="148.5" class="ascii-text line-typing" style="animation-delay: 0.987s;">*****ccc+`:+sscc**cc**+*ccc-`=#ss#sc*ccc=.+:&#160;.:=*csc</text>
+<text x="20" y="162.0" class="ascii-text line-typing" style="animation-delay: 1.113s;">cssccccs+``*scc*+***cccsssc-.=###sssss#s-`c=.-:..`-+</text>
+<text x="20" y="175.5" class="ascii-text line-typing" style="animation-delay: 1.24s;">ccc**+**+``+sscc**cccccccc*:.=c*+===*sss=:s=:s#c*=--</text>
+<text x="20" y="189.0" class="ascii-text line-typing" style="animation-delay: 1.367s;">******cc+`.*#sssssss#c-=++*-`+sccs*=+*cc=:c=:ccc##*`</text>
+<text x="20" y="202.5" class="ascii-text line-typing" style="animation-delay: 1.493s;">cccc+::-=`.*####ss###s+***s*+c###%#s#scc-:c=-s#sss+`</text>
+<text x="20" y="216.0" class="ascii-text line-typing" style="animation-delay: 1.62s;">###sc--=+`.c###ssscc*===-=**++*+=+cs###%=:#=-#%%#c+:</text>
+<text x="20" y="229.5" class="ascii-text line-typing" style="animation-delay: 1.747s;">%%##c==++:`c%###*--=---::---+c+-=--=c%%#=-s--sssc*=`</text>
+<text x="20" y="243.0" class="ascii-text line-typing" style="animation-delay: 1.873s;">%%%#c==++:`c%##*:--..`......:`.`--::-+ss=:c-:cccc*=`</text>
+<text x="20" y="256.5" class="ascii-text line-typing" style="animation-delay: 2.0s;">%%%%s+**+:`c%##+``..`:=+++**+==-..:-`:*s=:s-:s##sc=`</text>
+<text x="20" y="270.0" class="ascii-text line-typing" style="animation-delay: 2.127s;">#%%%s**c+-`*%##=`.-++*cssss####c+=-:``:s=-c-:cccc*=`</text>
+<text x="20" y="283.5" class="ascii-text line-typing" style="animation-delay: 2.253s;">#%%%sccc+-`*%##=:-+++*csss###%#sssc+-`*%==%-=###*+=`</text>
+<text x="20" y="297.0" class="ascii-text line-typing" style="animation-delay: 2.38s;">%%%%#css*-:c@%%*-**===+*sssssc**+*c#++@%==%-=%%%sc=:</text>
+<text x="20" y="310.5" class="ascii-text line-typing" style="animation-delay: 2.507s;">###%sccs*-:c@%@#=s+---`.`-c*```:-=+c+*@%-=%-+%%%sc+:</text>
+<text x="20" y="324.0" class="ascii-text line-typing" style="animation-delay: 2.633s;">ss##c**c*-:c%%##*s=--:*=`+%s+-:`::-c=ccs-=#-=#%@ss*-</text>
+<text x="20" y="337.5" class="ascii-text line-typing" style="animation-delay: 2.76s;">ss##c+*c*:`c%#:-*s*+==*+-s%ss+=-+*ss*+*+:=%:=sc+=+=:</text>
+<text x="20" y="351.0" class="ascii-text line-typing" style="animation-delay: 2.887s;">==++=--==--+*+=:+#s###s*c%%%s#%#%%%#*+c#-+%-+=&#160;&#160;&#160;.`:</text>
+<text x="20" y="364.5" class="ascii-text line-typing" style="animation-delay: 3.013s;">+=*++**=------+==cc###c==s#c*#%%%##c+#s**cssc.&#160;--+c*</text>
+<text x="20" y="378.0" class="ascii-text line-typing" style="animation-delay: 3.14s;">-*c#+---`````.`*=**css*-``==*cssssc++c+:-=+*c==*=+c*</text>
+<text x="20" y="391.5" class="ascii-text line-typing" style="animation-delay: 3.267s;">`+cc+===-:```````-c*c*:``-+===-=ssc*-::-----*%#=-=::</text>
+<text x="20" y="405.0" class="ascii-text line-typing" style="animation-delay: 3.393s;">`-++*+=---::-:``.&#160;=c*==--=++++**ccc+=-::`:`.=%#c##=`</text>
+<text x="20" y="418.5" class="ascii-text line-typing" style="animation-delay: 3.52s;">:--==--:::-:-:```.:c++=++++**ccc*c==*=--::`.=##s#s-`</text>
+<text x="20" y="432.0" class="ascii-text line-typing" style="animation-delay: 3.647s;">`-ccc*=:::::`.```.:c+==+ccsssssc*#*+*+--:``.=sssc=:`</text>
+<text x="20" y="445.5" class="ascii-text line-typing" style="animation-delay: 3.773s;">`:c*+*+--=-=::=--:-s+-==:.`::-=c%%=:```-=====**cscs*</text>
 </svg>

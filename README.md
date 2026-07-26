@@ -1,7 +1,7 @@
 <div align="center">
 
-# ⚡ Lucky Kuntal (ffzlucky7-coder) ⚡
-### 🚀 Full-Stack Developer | Tech Enthusiast | Open Source Contributor
+# 🤖 Lucky Kuntal (ffzlucky7-coder) 🤖
+### 🚀 AI Engineer | AI Agency Founder | Content Creator & Automation Expert
 
 [![Instagram](https://img.shields.io/badge/Instagram-@lucky__kuntal__18-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/lucky_kuntal_18/)
 [![GitHub](https://img.shields.io/badge/GitHub-ffzlucky7--coder-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ffzlucky7-coder)
@@ -19,12 +19,12 @@
 <br /><br />
 
 <!-- Side-by-Side ASCII Portrait & Neofetch Card -->
-<h2>💻 Developer Terminal & ASCII Portrait</h2>
+<h2>🤖 AI Terminal & ASCII Portrait</h2>
 
 <table>
   <tr>
     <td valign="top" align="center">
-      <img src="./profile-ascii.svg" width="370" alt="Animated ASCII Portrait" />
+      <img src="./profile-ascii.svg" width="370" alt="Animated ASCII Face Portrait" />
     </td>
     <td valign="top" align="center">
       <img src="./info-card.svg" width="490" alt="Neofetch Terminal Card" />
@@ -34,20 +34,36 @@
 
 <br />
 
-<!-- About Me Section -->
-<h2>🙋‍♂️ About Me</h2>
+<!-- About Me Section focused on AI, Agencies, Content Creation -->
+<h2>🚀 About Me</h2>
 
 <p align="left">
-  👋 Hey there! I'm <b>Lucky Kuntal</b>, a passionate Full-Stack Developer from India 🇮🇳.<br/>
-  💻 I love crafting high-performance web applications, sleek user interfaces, and automation tools.<br/>
-  ⚡ <b>Tech Stack:</b> Python, JavaScript, TypeScript, React, Next.js, Node.js, Express, C++, Git & Linux.<br/>
+  👋 Hey there! I'm <b>Lucky Kuntal</b> — an <b>AI Engineer & AI Entrepreneur</b> building AI Agencies & AI Startups 🇮🇳.<br/>
+  🤖 <b>Deep AI Interest:</b> Expert in AI Tools, LLMs, AI Agents, Prompt Engineering & Automated Workflows.<br/>
+  🎥 <b>Content Creator & Video Editor:</b> Professional Video Editing, AI Marketing, and High-Converting AI Ads Creation.<br/>
+  ⚡ <b>Core Focus:</b> Launching AI-powered solutions, automating business growth, and scaling AI startups.<br/>
   📸 <b>Connect with me:</b> Follow me on Instagram <a href="https://www.instagram.com/lucky_kuntal_18/"><b>@lucky_kuntal_18</b></a>!
 </p>
 
 <br />
 
-<!-- GitHub Stats & Top Languages -->
-<h2>🔥 GitHub Activity & Language Stats</h2>
+<!-- Tech Stack & AI Skill Badges -->
+<h2>🛠️ AI Tools, Tech & Skills</h2>
+
+<p>
+  <img src="https://img.shields.io/badge/Artificial_Intelligence-00A67E?style=for-the-badge&logo=openai&logoColor=white" alt="AI" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/AI_Automation-FF4B4B?style=for-the-badge&logo=n8n&logoColor=white" alt="Automation" />
+  <img src="https://img.shields.io/badge/Video_Editing-000555?style=for-the-badge&logo=adobe-premiere-pro&logoColor=white" alt="Video Editing" />
+  <img src="https://img.shields.io/badge/AI_Ads_&_Marketing-FF6C37?style=for-the-badge&logo=meta&logoColor=white" alt="AI Marketing" />
+  <img src="https://img.shields.io/badge/LLMs_&_Prompts-412991?style=for-the-badge&logo=huggingface&logoColor=white" alt="LLMs" />
+  <img src="https://img.shields.io/badge/Git_&_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Git" />
+</p>
+
+<br />
+
+<!-- GitHub Stats & Streak -->
+<h2>🔥 GitHub Activity</h2>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ffzlucky7-coder&show_icons=true&theme=dark&count_private=true&hide_border=true" width="420" alt="GitHub Stats" />
@@ -60,26 +76,10 @@
 
 <br />
 
-<!-- Tech Stack Badges -->
-<h2>🚀 Technologies & Tools</h2>
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-</p>
-
-<br />
-
 ---
 
 <p align="center">
-  <i>✨ Designed with passion by Lucky Kuntal | Auto-refreshed daily via GitHub Actions ✨</i>
+  <i>⚡ Building the Future with AI | Lucky Kuntal (@lucky_kuntal_18) ⚡</i>
 </p>
 
 </div>
