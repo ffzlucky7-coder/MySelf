@@ -5,7 +5,7 @@ from PIL import Image
 
 RAMP = " .`:-=+*cs#%@"  # bright -> dark
 
-def image_to_ascii(image_path, width=54):
+def image_to_ascii(image_path, width=54, max_rows=26):
     if not os.path.exists(image_path):
         print(f"Error: {image_path} not found.")
         sys.exit(1)
@@ -15,6 +15,7 @@ def image_to_ascii(image_path, width=54):
     aspect_ratio = img.height / img.width
     font_aspect = 0.52
     height = int(width * aspect_ratio * font_aspect)
+    height = min(height, max_rows)
     
     img_resized = img.resize((width, height), Image.Resampling.LANCZOS)
     arr = np.array(img_resized)
@@ -30,18 +31,16 @@ def image_to_ascii(image_path, width=54):
     return lines
 
 def build_animated_ascii_svg(lines, output_path="profile-ascii.svg"):
-    font_size = 11
+    font_size = 10.5
     line_height = 13.5
     char_width = 6.6
     
     num_rows = len(lines)
     max_cols = max(len(l) for l in lines) if lines else 54
     
-    padding_x = 20
-    padding_y = 24
-    
+    padding_x = 18
     width = 390
-    height = 430  # Matched exactly to Info Card height
+    height = 430  # Exact match to Info Card height!
     
     total_duration = 3.8
     row_delay = total_duration / max(num_rows, 1)
@@ -78,7 +77,7 @@ def build_animated_ascii_svg(lines, output_path="profile-ascii.svg"):
     svg_parts.append('<circle cx="20" cy="18" r="5.5" class="dot dot-red" />')
     svg_parts.append('<circle cx="36" cy="18" r="5.5" class="dot dot-yellow" />')
     svg_parts.append('<circle cx="52" cy="18" r="5.5" class="dot dot-green" />')
-    svg_parts.append(f'<text x="{width // 2}" y="22" text-anchor="middle" class="header-title">lucky_kuntal@ai-terminal ~ portrait.txt</text>')
+    svg_parts.append(f'<text x="{width // 2}" y="22" text-anchor="middle" class="header-title">lucky_kuntal@terminal ~ portrait.txt</text>')
     svg_parts.append(f'<line x1="0" y1="36" x2="{width}" y2="36" stroke="#30363d" stroke-width="1" />')
     
     # ASCII Text Rows
@@ -93,9 +92,9 @@ def build_animated_ascii_svg(lines, output_path="profile-ascii.svg"):
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(svg_parts))
-    print(f"Perfect Cropped ASCII SVG saved to {output_path}")
+    print(f"Compact height ASCII SVG (390x430) saved to {output_path}")
 
 if __name__ == "__main__":
-    prepped_img = "data/source-prepped.png" if os.path.exists("data/source-prepped.png") else "developer_lucky.jpg"
-    lines = image_to_ascii(prepped_img, width=52)
+    prepped_img = "data/source-prepped.png" if os.path.exists("data/source-prepped.png") else "developer_lucky.png"
+    lines = image_to_ascii(prepped_img, width=54, max_rows=26)
     build_animated_ascii_svg(lines, "profile-ascii.svg")
