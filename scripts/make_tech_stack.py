@@ -5,14 +5,15 @@ def build_tech_stack_svg(output_path="tech-stack.svg"):
     width = 860
     height = 180
     
+    # Pure ASCII labels for 100% GitHub Camo SVG rendering compatibility
     skills = [
-        ("🤖 Artificial Intelligence", "grad1"),
-        ("⚡ AI Automation", "grad2"),
-        ("🎬 Video Editing", "grad3"),
-        ("📈 AI Ads & Marketing", "grad4"),
-        ("🧠 LLMs & Prompts", "grad5"),
-        ("🐍 Python & ML", "grad6"),
-        ("🐙 Git & CI/CD", "grad7"),
+        ("Artificial Intelligence", "grad1"),
+        ("AI Automation", "grad2"),
+        ("Video Editing", "grad3"),
+        ("AI Ads & Marketing", "grad4"),
+        ("LLMs & Prompts", "grad5"),
+        ("Python & ML", "grad6"),
+        ("Git & CI/CD", "grad7"),
     ]
     
     svg_parts = []
@@ -53,7 +54,6 @@ def build_tech_stack_svg(output_path="tech-stack.svg"):
     svg_parts.append('</defs>')
     
     svg_parts.append('<style>')
-    # NO @import url! Uses system font stack so GitHub Camo proxy renders it 100% reliably
     svg_parts.append('''
         .card-bg { fill: #0d1117; rx: 12px; ry: 12px; stroke: #30363d; stroke-width: 1px; }
         .font-mono { font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
@@ -92,7 +92,7 @@ def build_tech_stack_svg(output_path="tech-stack.svg"):
     row1_skills = skills[:4]
     row2_skills = skills[4:]
     
-    start_x_r1 = 28
+    start_x_r1 = 36
     y_r1 = 56
     pill_h = 36
     gap_x = 16
@@ -108,7 +108,7 @@ def build_tech_stack_svg(output_path="tech-stack.svg"):
         svg_parts.append('</g>')
         cur_x += p_width + gap_x
         
-    start_x_r2 = 80
+    start_x_r2 = 90
     y_r2 = 112
     cur_x = start_x_r2
     for idx, (label, grad_id) in enumerate(row2_skills):
@@ -125,7 +125,7 @@ def build_tech_stack_svg(output_path="tech-stack.svg"):
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(svg_parts))
-    print(f"GitHub-compliant Tech Stack SVG saved to {output_path}")
+    print(f"Clean ASCII Tech Stack SVG saved to {output_path}")
 
 if __name__ == "__main__":
     build_tech_stack_svg("tech-stack.svg")

@@ -13,7 +13,7 @@
 <h2>📊 Live Contribution Calendar</h2>
 
 <a href="https://github.com/ffzlucky7-coder">
-  <img src="./contrib-heatmap.svg" width="860" alt="Live Contribution Heatmap" />
+  <img src="https://raw.githubusercontent.com/ffzlucky7-coder/ffzlucky7-coder/main/contrib-heatmap.svg" width="860" alt="Live Contribution Heatmap" />
 </a>
 
 <br /><br />
@@ -24,10 +24,10 @@
 <table>
   <tr>
     <td valign="top" align="center">
-      <img src="./profile-ascii.svg" width="370" alt="Animated ASCII Face Portrait" />
+      <img src="https://raw.githubusercontent.com/ffzlucky7-coder/ffzlucky7-coder/main/profile-ascii.svg" width="370" alt="Animated ASCII Face Portrait" />
     </td>
     <td valign="top" align="center">
-      <img src="./info-card.svg" width="490" alt="Neofetch Terminal Card" />
+      <img src="https://raw.githubusercontent.com/ffzlucky7-coder/ffzlucky7-coder/main/info-card.svg" width="490" alt="Neofetch Terminal Card" />
     </td>
   </tr>
 </table>
@@ -51,7 +51,7 @@
 <h2>🛠️ AI Tools, Tech & Skills</h2>
 
 <a href="https://github.com/ffzlucky7-coder">
-  <img src="./tech-stack.svg" width="860" alt="Eye Catching Gradient Tech Stack" />
+  <img src="https://raw.githubusercontent.com/ffzlucky7-coder/ffzlucky7-coder/main/tech-stack.svg" width="860" alt="Eye Catching Gradient Tech Stack" />
 </a>
 
 <br /><br />

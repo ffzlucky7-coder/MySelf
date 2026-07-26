@@ -64,31 +64,31 @@
 <text x="430" y="22" text-anchor="middle" class="font-mono header-title">lucky@skills ~ eye-catching-gradients.sh</text>
 <line x1="0" y1="36" x2="860" y2="36" stroke="#30363d" stroke-width="1" />
 <g class="pill-rect" style="animation-delay: 0.1s;">
-<rect x="28" y="56" width="257" height="36" fill="url(#grad1)" rx="18" ry="18" />
-<text x="156" y="79" text-anchor="middle" class="pill-text">🤖 Artificial Intelligence</text>
+<rect x="36" y="56" width="239" height="36" fill="url(#grad1)" rx="18" ry="18" />
+<text x="155" y="79" text-anchor="middle" class="pill-text">Artificial Intelligence</text>
 </g>
 <g class="pill-rect" style="animation-delay: 0.2s;">
-<rect x="301" y="56" width="167" height="36" fill="url(#grad2)" rx="18" ry="18" />
-<text x="384" y="79" text-anchor="middle" class="pill-text">⚡ AI Automation</text>
+<rect x="291" y="56" width="149" height="36" fill="url(#grad2)" rx="18" ry="18" />
+<text x="365" y="79" text-anchor="middle" class="pill-text">AI Automation</text>
 </g>
 <g class="pill-rect" style="animation-delay: 0.3s;">
-<rect x="484" y="56" width="167" height="36" fill="url(#grad3)" rx="18" ry="18" />
-<text x="567" y="79" text-anchor="middle" class="pill-text">🎬 Video Editing</text>
+<rect x="456" y="56" width="149" height="36" fill="url(#grad3)" rx="18" ry="18" />
+<text x="530" y="79" text-anchor="middle" class="pill-text">Video Editing</text>
 </g>
 <g class="pill-rect" style="animation-delay: 0.4s;">
-<rect x="667" y="56" width="212" height="36" fill="url(#grad4)" rx="18" ry="18" />
-<text x="773" y="79" text-anchor="middle" class="pill-text">📈 AI Ads & Marketing</text>
+<rect x="621" y="56" width="194" height="36" fill="url(#grad4)" rx="18" ry="18" />
+<text x="718" y="79" text-anchor="middle" class="pill-text">AI Ads & Marketing</text>
 </g>
 <g class="pill-rect" style="animation-delay: 0.5s;">
-<rect x="80" y="112" width="180" height="36" fill="url(#grad5)" rx="18" ry="18" />
-<text x="170" y="135" text-anchor="middle" class="pill-text">🧠 LLMs & Prompts</text>
+<rect x="90" y="112" width="162" height="36" fill="url(#grad5)" rx="18" ry="18" />
+<text x="171" y="135" text-anchor="middle" class="pill-text">LLMs & Prompts</text>
 </g>
 <g class="pill-rect" style="animation-delay: 0.6s;">
-<rect x="276" y="112" width="153" height="36" fill="url(#grad6)" rx="18" ry="18" />
-<text x="352" y="135" text-anchor="middle" class="pill-text">🐍 Python & ML</text>
+<rect x="268" y="112" width="135" height="36" fill="url(#grad6)" rx="18" ry="18" />
+<text x="335" y="135" text-anchor="middle" class="pill-text">Python & ML</text>
 </g>
 <g class="pill-rect" style="animation-delay: 0.7s;">
-<rect x="445" y="112" width="153" height="36" fill="url(#grad7)" rx="18" ry="18" />
-<text x="521" y="135" text-anchor="middle" class="pill-text">🐙 Git & CI/CD</text>
+<rect x="419" y="112" width="135" height="36" fill="url(#grad7)" rx="18" ry="18" />
+<text x="486" y="135" text-anchor="middle" class="pill-text">Git & CI/CD</text>
 </g>
 </svg>

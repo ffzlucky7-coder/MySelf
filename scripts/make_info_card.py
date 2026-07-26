@@ -5,23 +5,23 @@ def build_info_card(output_path="info-card.svg"):
     width = 510
     height = 430
     
+    # Pure ASCII text - NO multi-byte emojis inside SVG text nodes to ensure GitHub Camo proxy renders 100% cleanly
     items = [
-        ("Name", "Lucky Kuntal ⚡", "#ff7b72"),
-        ("Role", "AI Engineer & AI Entrepreneur 🤖", "#7ee787"),
-        ("Focus", "Building AI Agencies & AI Startups 🚀", "#58a6ff"),
-        ("Creation", "Content Creator & AI Video Editing 🎬", "#f778ba"),
-        ("Marketing", "AI Ads & Automated Marketing 📈", "#ffa657"),
+        ("Name", "Lucky Kuntal", "#ff7b72"),
+        ("Role", "AI Engineer & AI Entrepreneur", "#7ee787"),
+        ("Focus", "Building AI Agencies & AI Startups", "#58a6ff"),
+        ("Creation", "Content Creator & AI Video Editing", "#f778ba"),
+        ("Marketing", "AI Ads & Automated Marketing", "#ffa657"),
         ("Skills", "Prompt Eng, AI Automation, LLMs, Vision", "#d2a8ff"),
         ("Stack", "Python, OpenAI, PyTorch, Node, React", "#79c0ff"),
-        ("Instagram", "@lucky_kuntal_18 📸", "#f778ba"),
-        ("Location", "India 🇮🇳", "#ffa657"),
-        ("Status", "Building AI Startups & Collaborating 🤝", "#3fb950"),
+        ("Instagram", "@lucky_kuntal_18", "#f778ba"),
+        ("Location", "India", "#ffa657"),
+        ("Status", "Building AI Startups & Collaborating", "#3fb950"),
     ]
     
     svg_parts = []
     svg_parts.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">')
     svg_parts.append('<style>')
-    # NO @import url! Uses system font stack so GitHub Camo proxy renders it cleanly
     svg_parts.append('''
         .card-bg { fill: #0d1117; rx: 12px; ry: 12px; stroke: #30363d; stroke-width: 1px; }
         .font-mono { font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; }
@@ -85,7 +85,7 @@ def build_info_card(output_path="info-card.svg"):
         svg_parts.append(f'<g class="row-anim" style="animation-delay: {delay}s;">')
         svg_parts.append(f'<text x="24" y="{y_pos}" class="font-mono">')
         svg_parts.append(f'<tspan class="label" style="fill: {key_color};">{key}</tspan>')
-        svg_parts.append('<tspan class="sep"> &#10145; </tspan>')
+        svg_parts.append('<tspan class="sep"> -&gt; </tspan>')
         svg_parts.append(f'<tspan class="val">{val}</tspan>')
         svg_parts.append('</text>')
         svg_parts.append('</g>')
@@ -110,7 +110,7 @@ def build_info_card(output_path="info-card.svg"):
     
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(svg_parts))
-    print(f"GitHub-compliant Info Card SVG saved to {output_path}")
+    print(f"Clean ASCII-only Info Card SVG saved to {output_path}")
 
 if __name__ == "__main__":
     build_info_card("info-card.svg")

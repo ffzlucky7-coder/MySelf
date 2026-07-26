@@ -48,71 +48,71 @@
 <g class="row-anim" style="animation-delay: 0.25s;">
 <text x="24" y="96" class="font-mono">
 <tspan class="label" style="fill: #ff7b72;">Name</tspan>
-<tspan class="sep"> &#10145; </tspan>
-<tspan class="val">Lucky Kuntal ⚡</tspan>
+<tspan class="sep"> -&gt; </tspan>
+<tspan class="val">Lucky Kuntal</tspan>
 </text>
 </g>
 <g class="row-anim" style="animation-delay: 0.4s;">
 <text x="24" y="122" class="font-mono">
 <tspan class="label" style="fill: #7ee787;">Role</tspan>
-<tspan class="sep"> &#10145; </tspan>
-<tspan class="val">AI Engineer & AI Entrepreneur 🤖</tspan>
+<tspan class="sep"> -&gt; </tspan>
+<tspan class="val">AI Engineer & AI Entrepreneur</tspan>
 </text>
 </g>
 <g class="row-anim" style="animation-delay: 0.55s;">
 <text x="24" y="148" class="font-mono">
 <tspan class="label" style="fill: #58a6ff;">Focus</tspan>
-<tspan class="sep"> &#10145; </tspan>
-<tspan class="val">Building AI Agencies & AI Startups 🚀</tspan>
+<tspan class="sep"> -&gt; </tspan>
+<tspan class="val">Building AI Agencies & AI Startups</tspan>
 </text>
 </g>
 <g class="row-anim" style="animation-delay: 0.7s;">
 <text x="24" y="174" class="font-mono">
 <tspan class="label" style="fill: #f778ba;">Creation</tspan>
-<tspan class="sep"> &#10145; </tspan>
-<tspan class="val">Content Creator & AI Video Editing 🎬</tspan>
+<tspan class="sep"> -&gt; </tspan>
+<tspan class="val">Content Creator & AI Video Editing</tspan>
 </text>
 </g>
 <g class="row-anim" style="animation-delay: 0.85s;">
 <text x="24" y="200" class="font-mono">
 <tspan class="label" style="fill: #ffa657;">Marketing</tspan>
-<tspan class="sep"> &#10145; </tspan>
-<tspan class="val">AI Ads & Automated Marketing 📈</tspan>
+<tspan class="sep"> -&gt; </tspan>
+<tspan class="val">AI Ads & Automated Marketing</tspan>
 </text>
 </g>
 <g class="row-anim" style="animation-delay: 1.0s;">
 <text x="24" y="226" class="font-mono">
 <tspan class="label" style="fill: #d2a8ff;">Skills</tspan>
-<tspan class="sep"> &#10145; </tspan>
+<tspan class="sep"> -&gt; </tspan>
 <tspan class="val">Prompt Eng, AI Automation, LLMs, Vision</tspan>
 </text>
 </g>
 <g class="row-anim" style="animation-delay: 1.15s;">
 <text x="24" y="252" class="font-mono">
 <tspan class="label" style="fill: #79c0ff;">Stack</tspan>
-<tspan class="sep"> &#10145; </tspan>
+<tspan class="sep"> -&gt; </tspan>
 <tspan class="val">Python, OpenAI, PyTorch, Node, React</tspan>
 </text>
 </g>
 <g class="row-anim" style="animation-delay: 1.3s;">
 <text x="24" y="278" class="font-mono">
 <tspan class="label" style="fill: #f778ba;">Instagram</tspan>
-<tspan class="sep"> &#10145; </tspan>
-<tspan class="val">@lucky_kuntal_18 📸</tspan>
+<tspan class="sep"> -&gt; </tspan>
+<tspan class="val">@lucky_kuntal_18</tspan>
 </text>
 </g>
 <g class="row-anim" style="animation-delay: 1.45s;">
 <text x="24" y="304" class="font-mono">
 <tspan class="label" style="fill: #ffa657;">Location</tspan>
-<tspan class="sep"> &#10145; </tspan>
-<tspan class="val">India 🇮🇳</tspan>
+<tspan class="sep"> -&gt; </tspan>
+<tspan class="val">India</tspan>
 </text>
 </g>
 <g class="row-anim" style="animation-delay: 1.6s;">
 <text x="24" y="330" class="font-mono">
 <tspan class="label" style="fill: #3fb950;">Status</tspan>
-<tspan class="sep"> &#10145; </tspan>
-<tspan class="val">Building AI Startups & Collaborating 🤝</tspan>
+<tspan class="sep"> -&gt; </tspan>
+<tspan class="val">Building AI Startups & Collaborating</tspan>
 </text>
 </g>
 <g class="row-anim" style="animation-delay: 1.8s;">
