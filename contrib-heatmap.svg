@@ -45,6 +45,7 @@
 <text x="629" y="52" class="axis-label">Jun</text>
 <text x="704" y="52" class="axis-label">Jul</text>
 <text x="764" y="52" class="axis-label">Aug</text>
+<text x="824" y="52" class="axis-label">Sep</text>
 <text x="14" y="86" class="axis-label">Mon</text>
 <text x="14" y="116" class="axis-label">Wed</text>
 <text x="14" y="146" class="axis-label">Fri</text>
